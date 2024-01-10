@@ -9,18 +9,40 @@
         </OnPlatform>
     </ContentPage.Padding>
     <ContentView SizeChanged="OnContentViewSizeChanged">
-        <StackLayout x:Name="stackLayout">
-            <Button Text="Randomize"
+        <StackLayout x:Name="stackLayout"
+                     BackgroundColor="#9FD5D1"
+                     Spacing="20">
+            <Label Text="Xuzzle"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   Margin="20,0,20,0"
+                   HorizontalOptions="Center"/>
+            <Label Text="Desarrolla la imagen y mezcla para empezar de nuevo"
+                   FontSize="20"
+                   Margin="20,0,10,0"
+                   HorizontalOptions="Center" />
+            <Image Source="https://pics.craiyon.com/2023-06-16/853fd19b0eef4fa39b0767827510b350.webp"
+                   WidthRequest="180"
+                   HeightRequest="180"/>
+            <Button Text="Mezclar"
                     Clicked="OnRandomizeButtonClicked"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand" />
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="#FDE080"
+                    Margin="20,0,20,0"
+                    FontSize="Medium"
+                    CornerRadius="10"/>
             <AbsoluteLayout x:Name="absoluteLayout"
-                            BackgroundColor="Black" />
+                            BackgroundColor="White" />
             <!-- Balance out layout with invisible button. -->
-            <Button Text="Randomize"
+            <Button Text="Mezclar"
                     Opacity="0"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand" />
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="#FDE080"
+                    Margin="20,0,20,0"
+                    FontSize="Medium"
+                    CornerRadius="10"/>
         </StackLayout>
     </ContentView>
 </ContentPage>
